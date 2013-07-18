@@ -9,5 +9,11 @@ development: &dev_settings
   sql_query_pre: ["SET NAMES utf8"]
 production:
   <<: *dev_settings
+  pid_file: /var/www/uraspect_production/shared/pids/searchd.pid
+  indices_location: /var/www/uraspect_production/shared/db/sphinx
+staging:
+  <<: *dev_settings
+  pid_file: /var/www/uraspect_staging/shared/pids/searchd.pid
+  indices_location: /var/www/uraspect_staging/shared/db/sphinx
 test:
   <<: *dev_settings

@@ -29,3 +29,9 @@ production:
 cucumber:
   <<: *test
 ```
+
+## Thinking Sphinx
+```sh
+sudo apt-add-repository ppa:builds/sphinxsearch-stable
+sudo apt-get install sphinxsearch
+```
