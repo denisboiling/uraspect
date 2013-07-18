@@ -1,9 +1,120 @@
 <div class="wrapper">
-  <div class="row-fluid content">
-    <div class="headline">
-      <h3><%= raw @page.name %></h3>
+  <div class="container">
+    <div class="row-fluid content">
+      <div class="headline">
+        <h3><%= raw @page.name %></h3>
+      </div>
+      <div class="content_text">
+        <%= raw @page.content %>
+      </div>
+      <div id="clients-flexslider" class="flexslider home clients">
+        <div class="headline"><h3>Партнёры</h3></div>
+        <ul class="slides">
+          <li>
+            <a href="#">
+              <%= image_tag('clients/hp_grey.png', alt: "") %>
+              <%= image_tag('clients/hp.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/igneus_grey.png', alt: "") %>
+              <%= image_tag('clients/igneus.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/vadafone_grey.png', alt: "") %>
+              <%= image_tag('clients/vadafone.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/walmart_grey.png', alt: "") %>
+              <%= image_tag('clients/walmart.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/shell_grey.png', alt: "") %>
+              <%= image_tag('clients/shell.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/natural_grey.png', alt: "") %>
+              <%= image_tag('clients/natural.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/aztec_grey.png', alt: "") %>
+              <%= image_tag('clients/aztec.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/gamescast_grey.png', alt: "") %>
+              <%= image_tag('clients/gamescast.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/cisco_grey.png', alt: "") %>
+              <%= image_tag('clients/cisco.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/everyday_grey.png', alt: "") %>
+              <%= image_tag('clients/everyday.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/cocacola_grey.png', alt: "") %>
+              <%= image_tag('clients/cocacola.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/spinworkx_grey.png', alt: "") %>
+              <%= image_tag('clients/spinworkx.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/shell_grey.png', alt: "") %>
+              <%= image_tag('clients/shell.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/natural_grey.png', alt: "") %>
+              <%= image_tag('clients/natural.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/gamescast_grey.png', alt: "") %>
+              <%= image_tag('clients/gamescast.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/everyday_grey.png', alt: "") %>
+              <%= image_tag('clients/everyday.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <%= image_tag('clients/spinworkx_grey.png', alt: "") %>
+              <%= image_tag('clients/spinworkx.png', :class => "color-img", alt: "") %>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <%= raw @page.content %>
   </div>
 </div>
 

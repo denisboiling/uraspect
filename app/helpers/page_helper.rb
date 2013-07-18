@@ -2,7 +2,8 @@
 module PageHelper
 
   def raw_short_content_for(object)
-    raw truncate_html object.content, length: 200, omission: "..."
+    raw truncate_html object.content, length: 200,
+    omission: link_to("...", jurisprudence_path(object), :class => 'underdots hover-effect')
   end
 
   def menu_item_state(page)
