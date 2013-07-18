@@ -145,6 +145,7 @@ ru:
       doc_category:
         id:                     Номер
         name:                   Название
+        position:               Позиция
         created_at:             Дата создания
         updated_at:             Дата обновления
       seo:
