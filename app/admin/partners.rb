@@ -1,14 +1,17 @@
 # encoding: utf-8
 ActiveAdmin.register Partner do
+  menu priority: 9
+  config.sort_order = 'position_asc'
+  sortable
 
   index do
-    column :id
+    sortable_handle_column
+    column :position, sortable: :position
     column :url
     column :logo do |partner|
       image_tag partner.logo.thumb.url
     end
     column :created_at
-    column :updated_at
     default_actions
   end
 
@@ -21,5 +24,4 @@ ActiveAdmin.register Partner do
   end
 
   form partial: 'form'
-
 end
