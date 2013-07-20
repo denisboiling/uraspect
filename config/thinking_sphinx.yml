@@ -1,0 +1,23 @@
+development: &dev_settings
+  indexed_models:
+    - Doc
+    - Jurisprudence
+    - Page
+  html_strip: true
+  charset_type: utf-8
+  morphology: stem_ru
+  sql_query_pre: ["SET NAMES utf8"]
+  mysql41: 9311
+production:
+  <<: *dev_settings
+  pid_file: /var/www/uraspect_production/shared/pids/searchd.pid
+  indices_location: /var/www/uraspect_production/shared/db/sphinx
+  mysql41: 9312
+staging:
+  <<: *dev_settings
+  pid_file: /var/www/uraspect_staging/shared/pids/searchd.pid
+  indices_location: /var/www/uraspect_staging/shared/db/sphinx
+  mysql41: 9313
+test:
+  <<: *dev_settings
+  mysql41: 9314

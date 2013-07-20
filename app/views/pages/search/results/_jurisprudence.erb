@@ -1,0 +1,10 @@
+<div class="jurisprudence_search_result">
+  <div>
+    <%= link_to jurisprudence_path(jurisprudence) do %>
+      <i><%= raw @jurisprudences_excerpter.excerpt!(jurisprudence.name) %></i>
+    <% end %>
+  </div>
+  <div>
+    <%= raw @jurisprudences_excerpter.excerpt!(jurisprudence.content) %>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<% if @pages.present? %>
+  <h3>Результаты поиска по страницам</h3>
+  <% @pages.each do |page| %>
+    <%= render 'pages/search/results/page', page: page %>
+  <% end %>
+<% end %>

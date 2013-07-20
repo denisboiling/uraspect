@@ -21,4 +21,5 @@
 //= require parallax-slider/jquery.cslider
 //= require back-to-top
 //= require respond
+//= require rails.validations
 //= require_tree .

@@ -1,6 +1,6 @@
-role :web, ""
-role :app, ""
-role :db,  "", :primary => true
+role :web, "88.198.226.250"
+role :app, "88.198.226.250"
+role :db,  "88.198.226.250", :primary => true
 
 set :rails_env, "staging"
 set :branch, "stage"

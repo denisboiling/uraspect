@@ -1,56 +1,157 @@
 ru:
   footer:
-    text: "Компания BalticIT"
+    text: "Компания"
   mailer:
-    email: "Введите ваш e-mail"
-    message: "Введите ваше сообщение"
-    send: "Отправить"
-  js:
-    project_prefix: "/ru"
-    wrong_email: "Введите правильный e-mail"
-    short_message: "Ваше сообщение cлишком короткое"
-    send_success: "Ваше сообщение успешно отправлено"
-    send_error: "Произошла ошибка"
+    email:    Введите ваш e-mail
+    message:  Введите ваше сообщение
+    send:     Отправить
   translation:
-    en: "English"
-    ru: "Русский"
+    en: English
+    ru: Русский
   activerecord:
     models:
       admin_user:
-        one: Администратор
-        other: Администраторы
+        zero:   Администраторов
+        one:    Администратор
+        few:    Администраторов
+        many:   Администраторов
+        other:  Администраторы
       feedback:
         Обратная связь
+      banner:
+        zero:   Баннеров
+        one:    Баннер
+        few:    Баннеров
+        many:   Баннеров
+        other:  Баннеры
       page:
-        zero: Страниц
-        one: Страница
-        few: Страницы
-        many: Страниц
-        other: Страницы
+        zero:   Страниц
+        one:    Страница
+        few:    Страницы
+        many:   Страниц
+        other:  Страницы
+      partner:
+        zero:   Партнёров
+        one:    Партнёр
+        few:    Партнёров
+        many:   Партнёров
+        other:  Партнёры
+      review:
+        zero:   Отзывов
+        one:    Отзыв
+        few:    Отзыва
+        many:   Отзывов
+        other:  Отзывы
+      jurisprudence:
+        zero:   Судебных практик
+        one:    Судебная практика
+        few:    Судебных практики
+        many:   Судебных практик
+        other:  Судебные практики
+      order:
+        zero:   Заказов
+        one:    Заказ
+        few:    Заказов
+        many:   Заказов
+        other:  Заказы
+      doc:
+        zero:   Документов
+        one:    Документ
+        few:    Документа
+        many:   Документов
+        other:  Документы
+      doc_category:
+        zero:   Категорий документов
+        one:    Категория документов
+        few:    Категории документов
+        many:   Категорий документов
+        other:  Категории документов
+      seo:
+        СЕО
     attributes:
       admin_user:
-        id: Номер
-        email: Емайл
-        current_sign_in_at: Время текущего входа
-        last_sign_in_at: Врема последнего входа
-        current_sign_in_ip: Текущий IP
-        last_sign_in_ip: Последний IP
-        created_at: Дата создания
-        updated_at: Дата обновления
-        sign_in_count: Число входов
-        password: Пароль
-        password_confirmation: Подтверждение пароля
+        id:                     Номер
+        email:                  Емайл
+        current_sign_in_at:     Время текущего входа
+        last_sign_in_at:        Врема последнего входа
+        current_sign_in_ip:     Текущий IP
+        last_sign_in_ip:        Последний IP
+        created_at:             Дата создания
+        updated_at:             Дата обновления
+        sign_in_count:          Число входов
+        password:               Пароль
+        password_confirmation:  Подтверждение пароля
       feedback:
-        id: Номер
-        email: Емайл
-        message: Сообщение
-        created_at: Дата создания
-        updated_at: Дата обновления
+        id:                     Номер
+        email:                  Емайл
+        message:                Сообщение
+        created_at:             Дата создания
+        updated_at:             Дата обновления
       page:
-        id: Номер
-        name: Заголовок
-        slug: Псевдоним
-        parent: Родительская страница
-        parent_id: Родительская страница
-        hidden: Скрытая
-        layout: Шаблон для страницы
+        ancestry:               Родительские страницы
+        created_at:             Дата создания
+        content:                Контент
+        hidden:                 Скрытая
+        id:                     Номер
+        layout:                 Шаблон для страницы
+        name:                   Заголовок
+        parent:                 Родительская страница
+        parent_id:              Родительская страница
+        position:               Позиция
+        slug:                   Псевдоним
+        updated_at:             Дата обновления
+      review:
+        id:                     Номер
+        caption:                Подпись
+        content:                Текст отзыва
+        moderated:              Прошёл модерацию
+        created_at:             Дата создания
+        updated_at:             Дата обновления
+      jurisprudence:
+        id:                     Номер
+        name:                   Заголовок
+        content:                Контент
+        created_at:             Дата создания
+        updated_at:             Дата обновления
+      order:
+        content:                Заказ
+        last_name:              Фамилия
+        first_name:             Имя
+        phone:                  Телефон
+        created_at:             Оставлен
+        updated_at:             Обновлён
+      banner:
+        id:                     Номер
+        content:                Содержание
+        url:                    Ссылка
+        created_at:             Дата создания
+        updated_at:             Дата обновления
+      doc:
+        id:                     Номер
+        category:               Категория
+        name:                   Заголовок
+        example_file_name:      Имя файла
+        example_content_type:   Тип файла
+        example_file_size:      Размер файла в байтах
+        example_updated_at:     Дата обновления файла
+        created_at:             Дата создания
+        updated_at:             Дата обновления
+      partner:
+        id:                     Номер
+        logo:                   Логотип
+        url:                    Ссылка
+        position:               Позиция
+        created_at:             Дата создания
+        updated_at:             Дата обновления
+      doc_category:
+        id:                     Номер
+        name:                   Название
+        position:               Позиция
+        created_at:             Дата создания
+        updated_at:             Дата обновления
+      seo:
+        title:                  Заголовок
+        keywords:               Ключевые слова
+        description:            Описание
+        created_at:             Дата создания
+        updated_at:             Дата обновления

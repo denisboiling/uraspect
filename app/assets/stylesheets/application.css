@@ -11,7 +11,7 @@
  *= require_self
  *= require bootstrap/css/bootstrap
  *= require bootstrap/css/bootstrap-responsive.min
- *= require font-awesome/css/font-awesome
+ *= require font-awesome
  *= require flexslider/flexslider
  *= require parallax-slider/parallax-slider
  *= require style

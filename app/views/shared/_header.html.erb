@@ -1,21 +1,10 @@
 <div class="header">
   <div class="container navigation">
     <%= render 'shared/menu' %>
-    <div class="instant_help">
-      <p>
-        получите
-        <br />квалифицированную
-        <br />юридическую помощь
-        <br />прямо сейчас
-      </p>
-      <div class="instant_help_phone">
-        +7 (4012) 22-33-44
-      </div>
-      <a class="instant_help_skype_link" href="#">
-        <div class="instant_help_skype">
-          skype: yuraspect
-        </div>
-      </a>
+    <div class="instant_help_wrapper">
+      <%= render 'shared/header/instant_help' %>
+      <%= render 'shared/header/search' %>
     </div>
+    <div class="search_button"><a class="search sbutton_link"><i class="icon-search search-btn"></i></a></div>
   </div>
 </div>

@@ -1,0 +1,33 @@
+<%= form_for @order, :url => orders_path(@order) do |f| %>
+  <div class="field">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+    <%= errors_for @order, :last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+    <%= errors_for @order, :first_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+    <%= errors_for @order, :phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    <%= errors_for @order, :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+    <%= errors_for @order, :content %>
+  </div>
+
+  <%= f.submit "Отправить" %>
+<% end %>

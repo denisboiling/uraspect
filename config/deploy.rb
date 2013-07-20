@@ -2,15 +2,16 @@ require 'bundler/capistrano'
 #require 'capistrano-helpers/migrations'
 #require 'capistrano-helpers/shared'
 require 'capistrano-helpers/privates'
+require 'thinking_sphinx/capistrano'
 
 set :stages, %w(production staging)
 set :default_stage, "staging"
 require 'capistrano/ext/multistage'
 
-set :application, "" #write app name there
+set :application, "uraspect" #write app name there
 
 set :scm, :git
-set :repository,  "" #place your repo there
+set :repository,  "git@github.com:balticit/uraspect.git" #place your repo there
 
 set :deploy_via, :remote_cache
 
@@ -22,7 +23,7 @@ set :rvm_ruby_string, "ruby-2.0.0-head"
 set :rvm_install_with_sudo, true
 set :rvm_autolibs_flag, "readonly"
 
-set :base_directory, '/var/www/apps'
+set :base_directory, '/var/www'
 
 before 'deploy:setup', 'rvm:install_rvm'
 before 'deploy:setup', 'rvm:install_ruby'

@@ -11,11 +11,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Logo -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
     <!-- CSS and JS -->
     <%= stylesheet_link_tag 'application', :media => 'all' %>
     <!--[if IE 9]>
-      <%= stylesheet_link_tag 'parallax-slider/parallax_slider_for_ie9', :media => "all" %>
+      <%= stylesheet_link_tag 'ie9', :media => "all" %>
     <![endif]-->
     <%= javascript_include_tag 'application' %>
     <!-- Fonts -->
@@ -24,6 +24,7 @@
   </head>
 
   <body>
+    <%= show_flash %>
     <%= render 'shared/header' %>
     <div id="page">
       <%= yield %>

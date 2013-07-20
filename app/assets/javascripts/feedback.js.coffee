@@ -10,11 +10,6 @@ jQuery ->
         text: 'Введите правильный e-mail'
         type: 'error'
       return false
-    if $('#feedback_message').val().length < 10
-      noty
-        text: 'Ваше сообщение cлишком короткое'
-        type: 'error'
-      return false
   $('form#new_feedback').on 'ajax:success', ->
     noty text: 'Ваше сообщение успешно отправлено'
   $('form#new_feedback').on 'ajax:error', ->

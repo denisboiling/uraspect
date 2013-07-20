@@ -1,0 +1,25 @@
+<ul>
+  <% @doc_categories.each do |doc_category| %>
+    <% if doc_category.docs.any? %>
+      <li>
+        <div><%= doc_category.name %></div>
+        <ul>
+          <% doc_category.docs.each do |doc| %>
+            <li>
+              <%= link_to doc.name, doc_load_path(doc) %>
+            </li>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  <% end %>
+  <li>
+    <ul>
+      <% @docs_without_category.each do |doc| %>
+        <li>
+          <%= link_to doc.name, doc_load_path(doc) %>
+        </li>
+      <% end %>
+    </ul>
+  </li>
+</ul>

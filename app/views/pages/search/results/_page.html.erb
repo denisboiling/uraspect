@@ -1,0 +1,10 @@
+<div class="page_search_result">
+  <div>
+    <%= link_to slug_path(page) do %>
+      <i><%= raw @pages_excerpter.excerpt!(page.name) %></i>
+    <% end %>
+  </div>
+  <div>
+    <%= raw @pages_excerpter.excerpt!(page.content) %>
+  </div>
+</div>

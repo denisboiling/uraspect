@@ -1,0 +1,6 @@
+<% if @jurisprudences.present? %>
+  <h3>Результаты поиска по судебным практикам</h3>
+  <% @jurisprudences.each do |jurisprudence| %>
+    <%= render 'pages/search/results/jurisprudence', jurisprudence: jurisprudence %>
+  <% end %>
+<% end %>

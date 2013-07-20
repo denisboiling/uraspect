@@ -3,11 +3,26 @@ class PagesController < ApplicationController
 
   def index
     @jurisprudences = Jurisprudence.order('created_at DESC').first(3)
+    @reviews = Review.moderated.order('created_at DESC').first(3)
+    @review = Review.new
   end
 
   def show
     @page = Page.find_by_slug(params[:slug]) || Page.find(params[:slug])
+    @order = Order.new if params[:slug] == 'order_of_services'
     render params[:slug] if controller_view_exists?(params[:slug])
+  end
+
+  def search
+    query = params[:query]
+
+    @docs = Doc.search(query)
+    @jurisprudences = Jurisprudence.search(query)
+    @pages = Page.search(query)
+
+    @docs_excerpter = ThinkingSphinx::Excerpter.new("doc_core", query)
+    @jurisprudences_excerpter = ThinkingSphinx::Excerpter.new("jurisprudence_core", query)
+    @pages_excerpter = ThinkingSphinx::Excerpter.new("page_core", query)
   end
 
   private

@@ -3,37 +3,9 @@
     <div class="nav-collapse collapse">
       <ul class="nav top-2">
         <% Page.roots.visible.each do |page| %>
-          <li>
-            <% if page.children.any? %>
-              <%= link_to '#', :class => 'dropdown-toggle', :'data-toggle' => 'dropdown' do %>
-                <%= raw(page.name) %>
-                <b class='caret'></b>
-              <% end %>
-
-              <ul class="dropdown-menu">
-                <% page.children.each do |child| %>
-                  <li>
-                    <%= link_to raw(child.name), slug_path(child) %>
-                  </li>
-                <% end %>
-              </ul>
-              <b class="caret-out"></b>
-            <% else %>
-              <%= link_to raw(page.name), slug_path(page) %>
-            <% end %>
-          </li>
+          <%= render 'shared/menu/item', page: page %>
         <% end %>
-
-        <li class="search_icon"><a class="search"><i class="icon-search search-btn"></i></a></li>
       </ul>
-      <div class="search-open">
-        <div class="input-append">
-          <form>
-            <input type="text" class="span3" placeholder="Искать" />
-            <button type="submit" class="btn-u">Найти</button>
-          </form>
-        </div>
-      </div>
     </div>
   </div>
 </div>

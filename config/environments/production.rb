@@ -46,7 +46,7 @@ Uraspect::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  # config.assets.precompile += %w( search.js )
+  config.assets.precompile += %w( ie9.css )
 
   # Enable threaded mode
   # config.threadsafe!
@@ -62,11 +62,11 @@ Uraspect::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  config.middleware.use ExceptionNotifier,
+  config.middleware.use ExceptionNotification::Rack,
     email: {
       email_prefix: "[Whatever] ",
       email_format: :html,
-      sender_address: %{"notifier" <notifier@example.com>},
+      sender_address: %{"notifier" <xn--80akpsdhk3g.xn--p1ai>},
       exception_recipients:
         %w{ novoselov@balticit.ru smirnov@balticit.ru borzenko@balticit.ru
             denis@balticit.ru pryahina@balticit.ru }

@@ -1,0 +1,6 @@
+<% if @docs.present? %>
+  <h3>Результаты поиска по образцам документов</h3>
+  <% @docs.each do |doc| %>
+    <%= render 'pages/search/results/doc', doc: doc %>
+  <% end %>
+<% end %>

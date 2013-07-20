@@ -1,12 +1,12 @@
 upstream <%= name %>.conf {
-    server unix:/var/www/apps/<%= name %>/shared/pids/unicorn.sock fail_timeout=0;
+    server unix:/var/www/<%= name %>/shared/pids/unicorn.sock fail_timeout=0;
 }
 
 server {
     listen       80;
     server_name  <%= server_name %>
     charset utf-8;
-    root /var/www/apps/<%= name %>/current/public;
+    root /var/www/<%= name %>/current/public;
     client_max_body_size 10M;
 
     location ~ ^/assets|system/.*-(.*)\..* {
@@ -33,6 +33,6 @@ server {
 
     error_page 500 502 503 504 /500.html;
     location = /500.html {
-        root /var/www/apps/<%= name %>/current/public;
+        root /var/www/<%= name %>/current/public;
     }
 }

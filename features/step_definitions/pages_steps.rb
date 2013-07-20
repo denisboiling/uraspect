@@ -22,12 +22,3 @@ And /^the page "(.*?)" has child "(.*?)"$/ do |parent_name, child_name|
     child.save
   end
 end
-
-And /^I select link "(.*?)" from menu$/ do |name|
-  p = Page.find_by_name(name)
-  page.driver.browser.execute_script %Q{
-  	$("a[href='/#{p.slug}']").trigger('mouseover');
-  }
-end
- 
-

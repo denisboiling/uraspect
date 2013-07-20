@@ -1,0 +1,17 @@
+<div class="row-fluid margin-bottom-20">
+  <div class="span8 feedback_container">
+    <div class="headline">
+      <h3>Отзывы</h3>
+    </div>
+    <div class="feedback">
+      <%= link_to '#', :id => 'show-send-review_form', :class => 'hover-effect' do %>
+        оставить отзыв <%= image_tag('design/feedback_bubble.png') %>
+      <% end %>
+    </div>
+    <div id="send-review-form-wrapper" class="hidden">
+      <%= render 'reviews/form' %>
+    </div>
+    <%= render @reviews %>
+  </div>
+  <div class="span4"></div>
+</div>

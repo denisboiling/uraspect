@@ -1,0 +1,15 @@
+<%= form_for @review, :url => reviews_path(@review) do |f| %>
+  <div class="field">
+    <%= f.label :caption %>
+    <%= f.text_field :caption %>
+    <%= errors_for @review, :caption %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+    <%= errors_for @review, :content %>
+  </div>
+
+  <%= f.submit "Отправить" %>
+<% end %>

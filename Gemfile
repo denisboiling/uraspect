@@ -17,7 +17,15 @@ gem 'globalize3'
 gem 'ActiveAdmin-Globalize3-inputs'
 gem 'ancestry'
 gem 'email_validator', require: 'email_validator/strict'
+
 gem 'truncate_html'
+gem "font-awesome-rails"
+gem "paperclip", github: "thoughtbot/paperclip"
+gem 'thinking-sphinx'
+
+gem 'client_side_validations'
+gem 'acts_as_list'
+gem 'activeadmin-sortable'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -38,7 +46,7 @@ gem 'russian'
 
 gem 'unicorn'
 gem 'whenever'
-gem 'exception_notification', github: 'smartinez87/exception_notification'
+gem 'exception_notification', github: "smartinez87/exception_notification"
 
 gem 'roboto'
 

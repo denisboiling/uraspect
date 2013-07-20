@@ -1,0 +1,7 @@
+<div class="headline">
+  <h3>Наша судебная практика</h3>
+</div>
+<% @jurisprudences.each do |jurisprudence| %>>
+  <%= link_to jurisprudence.name, jurisprudence_path(jurisprudence) %>
+  <%= raw_short_content_for jurisprudence %> 
+<% end %>
