@@ -60,6 +60,7 @@ $short-sprite-dimensions: true;
 .field textarea {
   @include border-radius(6px);
   border:4px solid #d5d5d5 !important;
+  font-size: 19px;
 }
 
 .field textarea:focus {
