@@ -16,6 +16,12 @@ GIT
       sass (>= 3.1.0)
 
 GIT
+  remote: git://github.com/hgmnz/truncate_html.git
+  revision: a3ad60c1371c662a837683f61e1f075e7073abdf
+  specs:
+    truncate_html (0.9.2)
+
+GIT
   remote: git://github.com/railsbp/rails_best_practices.git
   revision: ed4064aeea3cd56c9a51df393fa21a2c917e77a3
   specs:
@@ -110,16 +116,16 @@ GEM
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
-    brakeman (2.0.0)
+    brakeman (2.1.0)
       erubis (~> 2.6)
       fastercsv (~> 1.5)
       haml (>= 3.0, < 5.0)
       highline (~> 1.6.19)
       multi_json (~> 1.2)
       ruby2ruby (~> 2.0.5)
-      ruby_parser (~> 3.1.1)
+      ruby_parser (~> 3.2.2)
       sass (~> 3.0)
-      slim (~> 1.3.6)
+      slim (>= 1.3.6, < 3.0)
       terminal-table (~> 1.4)
     builder (3.0.4)
     capistrano (2.15.5)
@@ -294,7 +300,7 @@ GEM
     multi_json (1.7.7)
     multi_test (0.0.1)
     multipart-post (1.2.0)
-    mysql2 (0.3.12)
+    mysql2 (0.3.13)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -372,7 +378,7 @@ GEM
     ruby2ruby (2.0.6)
       ruby_parser (~> 3.1)
       sexp_processor (~> 4.0)
-    ruby_parser (3.1.3)
+    ruby_parser (3.2.2)
       sexp_processor (~> 4.1)
     rubyzip (0.9.9)
     russian (0.6.0)
@@ -395,8 +401,8 @@ GEM
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
     simplecov-html (0.7.1)
-    slim (1.3.9)
-      temple (~> 0.6.3)
+    slim (2.0.0)
+      temple (~> 0.6.5)
       tilt (~> 1.3, >= 1.3.3)
     slop (3.4.5)
     sprockets (2.2.2)
@@ -434,7 +440,6 @@ GEM
     treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
-    truncate_html (0.9.2)
     twitter-stream (0.1.16)
       eventmachine (>= 0.12.8)
       http_parser.rb (~> 0.5.1)
@@ -520,7 +525,7 @@ DEPENDENCIES
   therubyracer
   thin
   thinking-sphinx
-  truncate_html
+  truncate_html!
   uglifier (>= 1.0.3)
   unicorn
   whenever

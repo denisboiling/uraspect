@@ -18,13 +18,23 @@ a.read-more:hover {
 
 /*Slider
 ------------------------------------*/
-.da-slide h2 i {
+.da-slide h2 i p {
+    display: inline;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: rgba(211,173,139,0.8);
     line-height: 60px;
+}
+.da-slide h2 i span {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgba(211,173,139,0.8);
+  line-height: 60px;
 }
 
 .da-slide p i {

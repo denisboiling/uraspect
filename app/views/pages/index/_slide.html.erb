@@ -1,20 +1,20 @@
 <div class="da-slide">
-  <div class="slider_paragraph_first">
-    <span class="paragraph_white">
-      <%= raw banner.paragraph(0) %>
-    </span>
-  </div>
+  <a href="#" class="home_link">
+    <div class="logo_img">
+      <%= image_tag("design/slider_logo.png", alt: "") %>
+    </div>
+  </a>
+  <a href="#" class="da-slider_content_link">
+    <div class="slider_paragraph_first">
+      <h2><i><%= raw banner.paragraph(0) %></i></h2>
+    </div>
 
-  <div class="slider_paragraph_second">
-    <span class="paragraph_white">
-      <%= raw banner.paragraph(1) %>
-    </span>
-  </div>
+    <div class="slider_paragraph_second">
+      <h2><i><%= raw banner.paragraph(1) %></i></h2>
+    </div>
 
-  <div class="slider_paragraph_third">
-    <span class="paragraph_white">
-      <%= raw banner.paragraph(2) %>
-    </span>
-  </div>
-  <%= link_to 'подробнее', banner.url, :class => 'da-link' %>
-</div>  
+    <div class="slider_paragraph_third">
+      <h2><i><%= raw banner.paragraph(2) %></i></h2>
+    </div>
+  </a>
+</div>
