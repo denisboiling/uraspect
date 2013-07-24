@@ -15,7 +15,7 @@ $short-sprite-dimensions: true;
   position:relative;
   padding:20px 0 0;
   @include border-radius(6px);
-  margin-top:50px;
+  margin-top:25px;
   @include box-sizing(border-box);
 }
 .request_lable {
