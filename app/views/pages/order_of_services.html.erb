@@ -2,7 +2,9 @@
   <div class="container">
   <div class="headline order"><h3>Заказ услуг</h3></div>
   <div class="row-fluid content order">
-    <%= raw @page.content %>
+    <div class="order_of_services content_text ">
+      <%= raw @page.content %>
+    </div>
     <%= render 'orders/form' %>
   </div>
     <%= render 'pages/index/partners' %>

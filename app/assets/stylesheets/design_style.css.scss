@@ -348,7 +348,7 @@ h3{
 }
 
 .headline.order {
-  margin-left: 100px;
+  margin-left: 0px;
 }
 
 .law_practice_link {
@@ -390,11 +390,18 @@ h3{
     line-height: 18px!important;
 
 }
+.content.comment {
+  margin-left: 190px;
+}
 
-.content_text p {
+.content_text p, .content_text {
   font-family: Verdana,Geneva,Kalimati,sans-serif;
   font-size: 16px;
   text-align: justify;
+}
+.leave_a_comment.content_text {
+  margin-bottom: 100px;
+
 }
 
 .jurispridence_title {
@@ -412,6 +419,10 @@ h3{
 
 .service .desc {
     min-width: 80%;
+}
+
+.order_of_services.content_text {
+  margin-top: 70px;
 }
 
 .desc_header {
@@ -480,6 +491,13 @@ h3{
 
 .review_textarea.input-block-level {
   height: 200px;
+}
+
+.headline.leave_a_comment {
+  margin-bottom: 20px;
+}
+.leave_a_comment_review_form {
+  width: 800px;
 }
 
 .hero-unify p {
