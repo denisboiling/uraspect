@@ -24,6 +24,11 @@ class PagesController < ApplicationController
     @jurisprudences_excerpter = ThinkingSphinx::Excerpter.new("jurisprudence_core", query)
     @pages_excerpter = ThinkingSphinx::Excerpter.new("page_core", query)
   end
+  def leave_a_comment
+    @page = Page.find_by_slug(:leave_a_comment) || Page.new
+    @review = Review.new
+    @reviews = Review.moderated.order('created_at DESC').first(3)
+  end
 
   private
 
