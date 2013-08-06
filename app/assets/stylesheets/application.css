@@ -20,5 +20,6 @@
  *= require themes/default
  *= require design_style
  *= require menu_style
+ *= require online_requests
  *= require_tree .
  */

@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="headline leave_a_comment">
+      <h3>Оставить отзыв</h3>
+    </div>
+    <div class="leave_a_comment content_text">
+      <%= raw @page.content %>
+    </div>
+    <div class="row-fluid content order comment">
+      <div class="leave_a_comment_review_form">
+        <%= render 'reviews/form' %>
+        <%= render @reviews %>
+      </div>
+    </div>
+    <%= render 'pages/index/partners' %>
+  </div>
+</div>

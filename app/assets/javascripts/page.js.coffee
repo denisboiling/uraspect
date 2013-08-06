@@ -13,5 +13,5 @@ $(document).ready ->
     event.preventDefault()
     $("#send-review-form-wrapper").removeClass "hidden"
 
-  if $("#send-review-form-wrapper .form_error").length > 0
+  if $("#send-review-form-wrapper .field_with_errors").length > 0
     $("#send-review-form-wrapper").removeClass "hidden"

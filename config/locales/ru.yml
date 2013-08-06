@@ -11,19 +11,19 @@ ru:
   activerecord:
     models:
       admin_user:
-        zero: Администраторов
-        one: Администратор
-        few: Администраторов
-        many: Администраторов
-        other: Администраторы
+        zero:   Администраторов
+        one:    Администратор
+        few:    Администраторов
+        many:   Администраторов
+        other:  Администраторы
       feedback:
         Обратная связь
       banner:
-        zero: Баннеров
-        one: Баннер
-        few: Баннеров
-        many: Баннеров
-        other: Баннеры
+        zero:   Баннеров
+        one:    Баннер
+        few:    Баннеров
+        many:   Баннеров
+        other:  Баннеры
       page:
         zero:   Страниц
         one:    Страница
@@ -31,11 +31,11 @@ ru:
         many:   Страниц
         other:  Страницы
       partner:
-        zero: Партнеров
-        one: Партнер
-        few: Партнеров
-        many: Партнеров
-        other: Партнеры
+        zero:   Партнёров
+        one:    Партнёр
+        few:    Партнёров
+        many:   Партнёров
+        other:  Партнёры
       review:
         zero:   Отзывов
         one:    Отзыв
@@ -121,11 +121,11 @@ ru:
         created_at:             Оставлен
         updated_at:             Обновлён
       banner:
-        id: Номер
-        content: Содержание
-        url: Ссылка
-        created_at: Дата создания
-        updated_at: Дата обновления
+        id:                     Номер
+        content:                Содержание
+        url:                    Ссылка
+        created_at:             Дата создания
+        updated_at:             Дата обновления
       doc:
         id:                     Номер
         category:               Категория
@@ -137,19 +137,21 @@ ru:
         created_at:             Дата создания
         updated_at:             Дата обновления
       partner:
-        id: Номер
-        created_at: Дата создания
-        updated_at: Дата обновления
-        logo: Логотип
-        url: Ссылка
+        id:                     Номер
+        logo:                   Логотип
+        url:                    Ссылка
+        position:               Позиция
+        created_at:             Дата создания
+        updated_at:             Дата обновления
       doc_category:
         id:                     Номер
         name:                   Название
+        position:               Позиция
         created_at:             Дата создания
         updated_at:             Дата обновления
       seo:
-        title: Заголовок
-        keywords: Ключевые слова
-        description: Описание
-        created_at: Дата создания
-        updated_at: Дата обновления
+        title:                  Заголовок
+        keywords:               Ключевые слова
+        description:            Описание
+        created_at:             Дата создания
+        updated_at:             Дата обновления

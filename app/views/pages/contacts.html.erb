@@ -1,7 +1,17 @@
 <div class="wrapper">
-  <div class="row-fluid content">
-    <%= raw @page.content %>
+  <div class="container">
+    <div class="row-fluid content">
+      <div class="headline">
+          <h3><%= raw @page.name %></h3>
+      </div>
+      <div class="content_text ">
+        <%= raw @page.content %>
+      </div>
+      <div class="contacts_form">
+        <%= render 'shared/feedback' %>
+      </div>
+      <%= render 'pages/index/partners' %>
+    </div>
   </div>
 </div>
 
-<%= render "shared/feedback" %>

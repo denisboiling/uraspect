@@ -1,6 +1,10 @@
 <div class="wrapper">
-  <div class="row-fluid content">
-    <%= raw @jurisprudence.content %>
+  <div class="container">
+    <div class="row-fluid content">
+      <div class="jurispridence_title"><%= raw @jurisprudence.name %></div>
+      <div class="content_text"><%= raw @jurisprudence.content %></div>
+    </div>
+    <%= render 'pages/index/partners' %>
   </div>
 </div>
 
