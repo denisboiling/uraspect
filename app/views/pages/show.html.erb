@@ -1,9 +1,14 @@
 <div class="wrapper">
-  <div class="row-fluid content">
-    <div class="headline">
-      <h3><%= raw @page.name %></h3>
+  <div class="container">
+    <div class="row-fluid content">
+      <div class="headline">
+        <h3><%= raw @page.name %></h3>
+      </div>
+      <div class="content_text">
+        <%= raw @page.content %>
+      </div>
+      <%= render 'pages/index/partners' %>
     </div>
-    <%= raw @page.content %>
   </div>
 </div>
 

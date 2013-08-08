@@ -18,7 +18,7 @@ gem 'ActiveAdmin-Globalize3-inputs'
 gem 'ancestry'
 gem 'email_validator', require: 'email_validator/strict'
 
-gem 'truncate_html'
+gem 'truncate_html', github: "hgmnz/truncate_html"
 gem "font-awesome-rails"
 gem "paperclip", github: "thoughtbot/paperclip"
 gem 'thinking-sphinx'

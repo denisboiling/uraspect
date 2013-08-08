@@ -74,10 +74,18 @@
   overflow: hidden;
 }
 
-.da-slide h2 i {
+.da-slide h2 i p {
   color:  #fffcfc;
   font-family:Verdana,Geneva,Kalimati,sans-serif;
   font-size: 36px;
+  font-style:normal;
+  line-height:50px;
+  white-space: nowrap;
+}
+
+.da-slide h2 i p span {
+  color:  #fffcfc;
+  font-family:Verdana,Geneva,Kalimati,sans-serif;
   font-style:normal;
   line-height:50px;
   white-space: nowrap;
