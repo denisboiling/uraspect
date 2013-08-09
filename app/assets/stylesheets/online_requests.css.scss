@@ -34,6 +34,7 @@ $short-sprite-dimensions: true;
   color: red;
   margin-top: -8px;
   margin-bottom: 6px;
+  font-size: 13px;
 }
 .request-control {
   @include input-placeholder(#cccccc,italic,200);
