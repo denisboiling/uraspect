@@ -458,24 +458,15 @@ blockquote:hover {
 }
 
 /*Copyright*/
-//.padding_bottom_full {
-//  padding-bottom: 100%;
-//}
 
 .copyright {
-    position: relative;
 	font-size:12px;
 	padding:5px 10px;
+    height: 40px;
 	border-top:solid 1px #777;
 }
 .copyright .container {
   position: relative;
-  position: relative;
-  height: 100%;
-}
-.copyright_text  {
-  position: absolute;
-  bottom: 0px
 }
 .copyright p {
 	color:#dadada;
