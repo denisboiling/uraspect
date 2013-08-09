@@ -42,7 +42,7 @@ $short-sprite-dimensions: true;
 
 .field input[type=text] {
   border:4px solid #d5d5d5 !important;
-  height: 48px !important;
+  height: 42px !important;
   width: 500px;
   @include border-radius(6px);
   font-size: 20px;
@@ -50,7 +50,7 @@ $short-sprite-dimensions: true;
 
 .field input[type=email] {
   border:4px solid #d5d5d5 !important;
-  height: 48px !important;
+  height: 42px !important;
   width: 500px;
   @include border-radius(6px);
   font-size: 20px;
@@ -91,7 +91,7 @@ $short-sprite-dimensions: true;
 .feedback-form {margin: 0;}
 
 .input-block-level.request_textarea {
-  height: 300px;
+  height: 200px;
 }
 
 .submit_button {
