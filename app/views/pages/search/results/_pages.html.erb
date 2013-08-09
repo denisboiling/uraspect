@@ -1,5 +1,7 @@
 <% if @pages.present? %>
-  <h3>Результаты поиска по страницам</h3>
+  <div class="headline">
+    <h3>Результаты поиска по страницам</h3>
+  </div>
   <% @pages.each do |page| %>
     <%= render 'pages/search/results/page', page: page %>
   <% end %>
