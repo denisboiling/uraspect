@@ -1,13 +1,13 @@
 <%= form_for @review, :url => reviews_path(@review), validate: true do |f| %>
   <div class="field">
-    <%= f.label :caption %>
-    <%= f.text_field :caption %>
+    <%= f.label :caption, class: 'request_lable' %>
+    <%= f.text_field :caption, class: 'input-block-level' %>
   </div>
 
   <div class="field">
-    <%= f.label :content %>
+    <%= f.label :content, class: 'request_lable' %>
     <%= f.text_area :content, class: 'review_textarea input-block-level' %>
   </div>
 
-  <%= f.submit "Отправить", class: 'submit_button' %>
+  <%= f.submit 'Отправить', class: 'submit_button' %>
 <% end %>
