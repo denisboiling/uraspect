@@ -2,13 +2,14 @@
   <div class="span8 feedback_container">
     <div class="headline review">
       <h3>Отзывы</h3>
+      <span class="main_feedback_flash"> <%= show_flash %> </span>
     </div>
     <div class="feedback">
-      <%= link_to '#', :id => 'show-send-review_form', :class => 'hover-effect' do %>
+      <%= link_to '#', :id => 'show-send-review_form', :class => 'feedback_trigger hover-effect' do %>
         оставить отзыв <%= image_tag('design/feedback_bubble.png') %>
       <% end %>
     </div>
-    <div id="send-review-form-wrapper" class="hidden">
+    <div id="send-review-form-wrapper">
       <%= render 'reviews/form' %>
     </div>
     <%= render @reviews %>

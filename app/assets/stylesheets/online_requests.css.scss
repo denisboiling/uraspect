@@ -32,6 +32,9 @@ $short-sprite-dimensions: true;
 .field .field_with_errors .message {
   margin-left: 1px;
   color: red;
+  margin-top: -8px;
+  margin-bottom: 6px;
+  font-size: 13px;
 }
 .request-control {
   @include input-placeholder(#cccccc,italic,200);
