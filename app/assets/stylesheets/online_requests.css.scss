@@ -18,17 +18,20 @@ $short-sprite-dimensions: true;
   margin-top:25px;
   @include box-sizing(border-box);
 }
+
 .request_lable {
   font-family: Verdana, Geneva, Kalimati, sans-serif;
   font-size: 20px;
   color: #666666;
 }
+
 .field select {
   width: 161px;
   //margin-top: 10px;
   margin-bottom: 15px;
   margin-left: 2px;
 }
+
 .field .field_with_errors .message {
   margin-left: 1px;
   color: red;
@@ -36,6 +39,7 @@ $short-sprite-dimensions: true;
   margin-bottom: 6px;
   font-size: 13px;
 }
+
 .request-control {
   @include input-placeholder(#cccccc,italic,200);
 }
@@ -77,11 +81,11 @@ $short-sprite-dimensions: true;
   font-size: 20px;
 
 }
+
 .contacts_form {
   margin-top: 30px;
   margin-bottom: 100px;
 }
-
 
 .feedback-notification {
   margin:0 auto;
