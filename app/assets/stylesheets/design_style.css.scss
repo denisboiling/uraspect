@@ -74,6 +74,7 @@ z-index: -1;
   .search_wrapper {
     position: absolute;
     top: 47px;
+    right: -56px;
     height: 100px;
     z-index: 2000;
   }
@@ -124,12 +125,11 @@ z-index: -1;
 }
 
 .search-open{
-  float: left;
-  margin-left: 5px;
   padding: 15px;
   z-index:100;
   background: #fcfcfc;
 }
+
 .search-open .input-append {
   margin-bottom: 0px;
 }
