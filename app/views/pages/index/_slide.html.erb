@@ -4,17 +4,19 @@
       <%= image_tag('design/slider_logo.png', alt: '') %>
     </div>
   </a>
-  <a href="#" class="da-slider_content_link">
-    <div class="slider_paragraph_first slider_banner">
-      <h2><i><%= raw banner.paragraph(0) %></i></h2>
-    </div>
+  <%= link_to(banner.url) do %>
+    <div class="da-slider_content_link">
+      <div class="slider_paragraph_first slider_banner">
+        <h2><i><%= raw banner.paragraph(0) %></i></h2>
+      </div>
 
-    <div class="slider_paragraph_second slider_banner">
-      <h2><i><%= raw banner.paragraph(1) %></i></h2>
-    </div>
+      <div class="slider_paragraph_second slider_banner">
+        <h2><i><%= raw banner.paragraph(1) %></i></h2>
+      </div>
 
-    <div class="slider_paragraph_third slider_banner">
-      <h2><i><%= raw banner.paragraph(2) %></i></h2>
+      <div class="slider_paragraph_third slider_banner">
+        <h2><i><%= raw banner.paragraph(2) %></i></h2>
+      </div>
     </div>
-  </a>
+  <% end %>
 </div>
