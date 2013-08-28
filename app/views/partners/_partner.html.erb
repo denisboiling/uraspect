@@ -1,6 +1,6 @@
 <li>
-  <%= link_to partner.url do %> 
-    <%= image_tag partner.logo.thumb.url, :class => "color-img", :alt => "" %>
-    <%= image_tag partner.logo.thumb.gray.url %>
-  <% end %> 
+  <%= link_to "#", title: partner.url do %>
+    <%= image_tag partner.logo.thumb.url, :class => "color-img", :alt => partner.url %>
+    <%= image_tag partner.logo.thumb.gray.url, :alt => partner.url %>
+  <% end %>
 </li>
